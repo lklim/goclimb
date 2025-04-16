@@ -1,0 +1,19 @@
+.admin-home-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.admin-main-body {
+    display: flex;
+    flex: 1;
+    height: calc(100vh - 50px); /* fills screen below navbar */}
+
+.admin-home-content {
+    padding: 30px;
+    width: 100%;
+    background-color: #606060;
+    min-height: calc(100vh - 50px);
+    box-sizing: border-box;
+    
+}

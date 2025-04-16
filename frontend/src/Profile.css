@@ -1,0 +1,225 @@
+/* Profile.css */
+.profile-page {
+    display: flex;
+    flex-direction: column; /* Stack navbar above content */
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+    background-color: #1e1e1e;
+    overflow: hidden;
+  }
+  
+  .profile-card {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  /* Achievement section */
+  .achievement-section {
+    margin-bottom: 30px;
+  }
+  
+  .achievement-card {
+    background-color: #2d2d2d;
+    border: 1px solid #00a896;
+    border-radius: 16px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .achievement-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 2px solid #fff;
+  }
+  
+  .achievement-info h4 {
+    margin: 0 0 5px;
+    color: #00a896;
+  }
+  
+  .achievement-info p {
+    margin: 0 0 5px;
+    color: #ddd;
+  }
+  
+  .achievement-info small {
+    color: #aaa;
+  }
+  
+  /* Post box */
+  .post {
+    background-color: #323334;
+    border: 1px solid #00a896;
+    border-radius: 16px;
+    padding: 15px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+  }
+  
+  .post-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  
+  .caption {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #ffffff;
+  }
+  
+  .caption-box {
+    width: fit-content;
+    background-color: #444;
+    border: 1px solid #fff;
+    margin-bottom: 10px;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+    display: inline-block;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .actions .like-button {
+    background: #76db17;
+    border: none;
+    padding: 6px 12px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .actions .like-button:hover {
+    background: #5db713;
+  }
+  
+  .actions .delete-button {
+    background: #ff4d4d;
+    border: none;
+    padding: 6px 12px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .actions .delete-button:hover {
+    background: #d63c3c;
+  }
+  
+  .comments-section {
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+  }
+  
+  .comments-section h4 {
+    margin: 0 0 8px;
+    font-size: 14px;
+  }
+  
+  .comment {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  .comment-input-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+    align-items: center;
+  }
+  
+  .comments-section input[type="text"] {
+    width: calc(90% - 60px);
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 6px;
+  }
+  
+  .comments-section button {
+    margin-top: 6px;
+    margin-left: 8px;
+    background: #007bff;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .comments-section button:hover {
+    background: #0056b3;
+  }
+  
+  /* Activities section */
+.activities-section {
+    margin-bottom: 30px;
+  }
+  
+  .activity-card {
+    background-color: #252525;
+    border: 1px solid #f4a261;
+    border-radius: 16px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .activity-info h4 {
+    margin: 0 0 5px;
+    color: #f4a261;
+  }
+  
+  .activity-info p {
+    margin: 0 0 5px;
+    color: #ddd;
+  }
+  
+  .activity-info small {
+    color: #888;
+  }
+  
+  .edit-profile-btn {
+    margin-top: 12px;
+    padding: 8px 16px;
+    background-color: #00a896;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .edit-profile-btn:hover {
+    background-color: #007e6e;
+  }
+  

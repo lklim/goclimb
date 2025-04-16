@@ -1,0 +1,176 @@
+/* Entire container for the map page */
+.map-container {
+    display: flex;
+    flex-direction: column; /* Stack navbar above content */
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+/* Wrapper for sidebar and map, arranged side by side */
+.map-content {
+    display: flex;
+    flex: 1;
+    height: calc(100vh - 50px); /* Leaves space for navbar */
+    overflow: hidden;
+}
+
+/* Sidebar styles */
+.sidebar {
+    position: relative;
+    z-index: 999;
+    width: 0;
+    max-width: 350px;
+    background: rgba(50, 51, 52, 0.95);
+    color: white;
+    overflow-y: auto;
+    transition: width 0.3s ease-in-out;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar.visible {
+    width: 350px;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #82d039;
+    height: 10px;
+    border-radius: 20px;
+    cursor: grab;
+}
+
+.sidebar::-webkit-scrollbar-thumb:active {
+    cursor: grabbing;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: #595959;
+    border-radius: 20px;
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.crag-image {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    padding: 5px;
+    border-radius: 20px;
+    margin-bottom: -30px;
+    display: block;
+    object-fit: contain;
+}
+
+.text-content {
+    width: 100%;
+    text-align: left;
+}
+
+.divider {
+    border: none;
+    height: 1px;
+    background-color: #c8c7c7;
+    margin: 15px 0;
+}
+
+.weather-info {
+    margin-top: 15px;
+    padding: 10px;
+    background: #444;
+    border-radius: 20px;
+    color: white;
+    text-align: left;
+}
+
+.text-content h2 {
+    margin-bottom: 5px;
+}
+
+.text-content p {
+    margin: 3px 0;
+}
+
+.weather-info p {
+    margin: 5px;
+}
+
+.weather-info h3 {
+    margin: 5px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.ar-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    padding: 12px;
+    background: #00a896;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.ar-button:hover {
+    background: #018174;
+}
+
+.close-button {
+    display: block;
+    width: 100%;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.close-button:hover {
+    background: #e63c3c;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+}
+
+.leaflet-control-zoom {
+    position: absolute !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    z-index: 1001 !important;
+}
