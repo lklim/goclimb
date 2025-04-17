@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/api': 'https://goclimb-8qkk.onrender.com:7000',
+      '/api': 'https://goclimb-8qkk.onrender.com:8000',
     },
   },
 })
