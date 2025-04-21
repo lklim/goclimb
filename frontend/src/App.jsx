@@ -39,7 +39,7 @@ function App() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={user ? <Navigate to="/search" replace /> : <Login />} />
+                <Route path="/" element={user ? <Navigate to="/profile" replace /> : <Login />} />
                 <Route path="/register" element={<Register />} />
                 <Route path="/home" element={user ? <Home /> : <Navigate to="/" replace />} />
                 <Route path="/map" element={user ? <Map /> : <Navigate to="/" replace />} />
