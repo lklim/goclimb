@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router";
 import { useEffect, useState } from "react";
 import supabase from "./supabaseClient";
 import Login from "./Login";
@@ -45,7 +45,7 @@ function App() {
                 <Route path="/map" element={user ? <Map /> : <Navigate to="/" replace />} />
                 <Route path="/map/:cragId" element={user ? <Map /> : <Navigate to="/" replace />} />
                 <Route path="/search" element={user ? <Search /> : <Navigate to="/" replace />} />
-                <Route path="/profile" element={<Profile />} />
+                <Route path="/profile" element={user ? <Profile /> : <Navigate to="/" replace/>} />
                 <Route path="/editprofile" element={user ? <EditProfile /> : <Navigate to="/" replace />} />
                 <Route path="/admin" element={<AdminHome />} />
                 <Route path="/admin/users" element={<AdminManageUser />} />
