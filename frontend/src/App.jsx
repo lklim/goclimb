@@ -56,3 +56,6 @@ function App() {
 }
 // <Route path="/" element={user ? <Navigate to="/home" replace /> : <Login />} />
 export default App;
+
+// Log to console
+console.log('Hello console')
