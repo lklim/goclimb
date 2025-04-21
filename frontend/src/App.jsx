@@ -44,8 +44,8 @@ function App() {
                 <Route path="/home" element={user ? <Home /> : <Navigate to="/" replace />} />
                 <Route path="/map" element={user ? <Map /> : <Navigate to="/" replace />} />
                 <Route path="/map/:cragId" element={user ? <Map /> : <Navigate to="/" replace />} />
-                <Route path="/search" element={user ? <Search /> : <Navigate to="/" replace />} />
-                <Route path="/profile" element={user ? <Profile /> : <Navigate to="/" replace />} />
+                <Route path="/search" element={true ? <Search /> : <Navigate to="/" replace />} />
+                <Route path="/profile" element={true ? <Profile /> : <Navigate to="/" replace />} />
                 <Route path="/editprofile" element={user ? <EditProfile /> : <Navigate to="/" replace />} />
                 <Route path="/admin" element={<AdminHome />} />
                 <Route path="/admin/users" element={<AdminManageUser />} />
