@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "/api"; // Proxy to Django
+const API_BASE_URL = "http://hsch2ch20h.pythonanywhere.com/api"; // Proxy to Django
 
 export const fetchData = async () => {
   try {
